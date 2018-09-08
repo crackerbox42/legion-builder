@@ -1,0 +1,9 @@
+<h3 class="text-center">Command Cards</h3>
+<div class="row"  *ngFor="let card of list, let i=index">
+  <div class="col-xs-11">
+    <li class="list-group-item clearfix">{{ card.name }} ({{ card.pips }})</li>
+  </div>
+  <div class="col-xs-1">
+    <a (click)="onRemoveCard(i)" style="cursor: pointer;"><span class="glyphicon glyphicon-minus-sign" title="Delete"></span></a>
+  </div>
+</div>

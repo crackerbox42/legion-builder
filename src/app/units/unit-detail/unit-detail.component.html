@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-11">
+    <li class="list-group-item clearfix">
+      <div class="col-xs-10">
+        <h4 class="list-group-item-heading">{{ unit.name }}<span class="subtitle" *ngIf="unit.subtitle != ''"> {{ unit.subtitle }}</span></h4>
+        <p class="list-group-item-text">Cost: {{ unit.cost }}</p>
+      </div>
+      <div class="col-xs-2">
+        <span>
+          <img (click)="imageToggle()" src="{{ unit.image }}" class="{{ imageClass }}" style="cursor: pointer;">
+        </span>
+      </div>
+    </li>
+  </div>
+  <div class="col-xs-1">
+    <a (click)="onAddUnit()" style="cursor: pointer;"><span class="glyphicon glyphicon-plus-sign" title="Add to List"></span></a>
+  </div>
+</div>

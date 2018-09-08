@@ -1,0 +1,51 @@
+<div>
+  <h3 class="text-center">List</h3>
+    <h3 style="text-align: right;" class="{{ pointsColor }}">
+      Points: {{ totalPoints }}/
+      <span class="btn-group" appDropdown>
+        <span style="cursor: pointer;">{{ armySize }} <span class="caret"></span></span>
+        <ul class="dropdown-menu">
+            <li class="dropdown-menu-option" (click)="onArmySize(350)">350</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(400)">400</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(500)">500</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(600)">600</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(650)">650</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(800)">800</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(1000)">1000</li>
+            <li class="dropdown-menu-option" (click)="onArmySize(1600)">1600</li>
+        </ul>
+      </span>
+    </h3>
+  <h4 style="text-align: right">
+    <img src="assets/images/Commander.png" class="rankImage">: <span class="{{ unitAmounts.commander.color }}">{{ unitAmounts.commander.amount }}/{{ unitAmounts.commander.minimum }}-{{ unitAmounts.commander.maximum }} </span>
+    <img src="assets/images/Operative.png" class="rankImage">: <span class="{{ unitAmounts.operative.color }}">{{ unitAmounts.operative.amount }}/{{ unitAmounts.operative.maximum }} </span>
+    <img src="assets/images/Corps.png" class="rankImage">: <span class="{{ unitAmounts.corps.color }}">{{ unitAmounts.corps.amount }}/{{ unitAmounts.corps.minimum }}-{{ unitAmounts.corps.maximum }} </span>
+    <img src="assets/images/Special Forces.png" class="rankImage">: <span class="{{ unitAmounts.specialForces.color }}">{{ unitAmounts.specialForces.amount }}/{{ unitAmounts.specialForces.maximum }} </span>
+    <img src="assets/images/Support.png" class="rankImage">: <span class="{{ unitAmounts.support.color }}">{{ unitAmounts.support.amount }}/{{ unitAmounts.support.maximum }} </span>
+    <img src="assets/images/Heavy.png" class="rankImage">: <span class="{{ unitAmounts.heavy.color }}">{{ unitAmounts.heavy.amount }}/{{ unitAmounts.heavy.maximum }} </span>
+  </h4>
+</div>
+<div class="row" *ngFor="let unit of list, let i = index">
+  <div class="col-xs-11">
+    <li class="list-group-item clearfix">
+      <h4 class="list-group-item-heading">{{ unit.name }}<span class="subtitle" *ngIf="unit.subtitle != ''"> {{ unit.subtitle }}</span> ({{ unit.cost }})</h4>
+      <app-upgrades 
+        *ngFor="let upgrade of unit.availableUpgrades, let j = index"
+        [upgradeType]="unit.availableUpgrades[j]"
+        [unit]="unit"
+        [upgradeIndex]="j"
+        [unitIndex]="i"
+        [chosenUpgradeTitle]="unit.chosenUpgrades[j].name"
+        [chosenUpgradeCost]="unit.chosenUpgrades[j].cost">
+      </app-upgrades>
+    </li>
+  </div>
+  <div class="col-xs-1">
+    <a (click)="onRemoveUnit(i)" style="cursor: pointer;"><span class="glyphicon glyphicon-minus-sign" title="Delete"></span></a>
+    <a (click)="onDuplicateUnit(i)" style="cursor: pointer;"><span class="glyphicon glyphicon-plus-sign" title="Duplicate"></span></a>
+  </div>
+</div>
+<app-command-cards></app-command-cards>
+<!-- <button (click)="onSaveList()" class="btn btn-primary">Save List</button>
+<button (click)="resetList()" class="btn btn-danger">Reset List</button>
+<a role="button" class="btn btn-primary" routerLink="/print">Printer Friendly Page</a> -->

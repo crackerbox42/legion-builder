@@ -1,0 +1,23 @@
+
+  <div class="col-xs-6"> 
+    <h1 class="text-center">Units</h1>
+    <div class="row" *ngFor="let unit of unitList | async, let i = index">
+      <div class="col-xs-11">
+        <span class="list-group-item clearfix">
+          <h4 class="list-group-item-heading">{{ unit.name }}<span class="subtitle" *ngIf="unit.subtitle != ''"> {{ unit.subtitle }}</span> ({{ unit.cost }})</h4>
+          <span *ngFor="let upgrade of unit.chosenUpgrades">
+              <li class="upgradeCard" *ngIf="upgrade.name">{{ upgrade.name }} ({{ upgrade.cost }}) | </li>
+          </span> 
+        </span>
+      </div>
+    </div>
+    <h4>Total Points: {{ totalPoints }}</h4>
+  </div>
+  <div class="col-xs-6">
+    <h1 class="text-center">Command Cards</h1>
+    <div class="row" *ngFor="let card of commandList | async">
+      <span class="list-group-item clearfix">
+        <h4 class="list-group-item-heading">{{ card.name }} ({{ card.pips }})</h4>
+      </span>
+    </div>
+  </div>

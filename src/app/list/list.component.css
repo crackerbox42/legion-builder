@@ -1,0 +1,54 @@
+.black  {
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+a {
+    margin: 10px 5px;
+}
+
+.btn-primary, .btn-primary:focus {
+    background-color: #ff9933;
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #ff6600 !important;
+}
+
+.btn-danger {
+    border: none;
+}
+
+.btn-group {
+    vertical-align: baseline;
+    min-width: 0px;
+}
+
+.rankImage {
+    height: 15px;
+    width: 20px;
+}
+
+.dropdown-menu-option:hover {
+    background-color: #ff9933;
+}
+
+.dropdown-menu-option {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    margin: 0px;
+    min-width: 50px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 15px;
+}

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a (click)="onSaveList()"><span class="glyphicon glyphicon-floppy-save" title="Save List"></span> Save List</a>
+        </li>
+        <!-- <li>
+            <ng-template #loadDialog>
+                <div class="col-sm-2 form-group">
+                  <label for="listID">List ID:</label>
+                  <input
+                    type="text"
+                    id="listID"
+                    class="form-control"
+                    #listIDInput>
+                  <button class="btn btn-success" type="submit" (click)="onLoadList()">Load</button>
+                </div>
+            </ng-template>
+            <a [popover]="loadDialog" triggers="click" placement="bottom"><span class="glyphicon glyphicon-floppy-open" title="Load List"></span> Load List</a>
+        </li> -->
+        <li>
+          <a (click)="resetList()"><span class="glyphicon glyphicon-refresh" title="Reset List"></span> Reset List</a>
+        </li>
+        <li>
+          <a routerLink="/print"><span class="glyphicon glyphicon-print" title="Printer Friendly Page"></span> Printer Friendly Page</a>
+        </li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>

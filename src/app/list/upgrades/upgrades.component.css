@@ -1,0 +1,29 @@
+li:hover {
+    background-color: #ff9933;
+}
+
+li {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    margin: 0px;
+}
+
+.btn-primary, .btn-primary:focus {
+    background-color: #ff9933;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #ff6600 !important;
+}
+
+.upgradeImage {
+    width: 200px;
+    height: 309px;
+}

@@ -1,0 +1,25 @@
+img.thumb {
+    height: 45px;
+    width: 70px;
+}
+
+img.full {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 100%;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.rankImage {
+    height: 15px;
+    width: 20px;
+    margin: 0 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 15px;
+}

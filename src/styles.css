@@ -1,0 +1,18 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #ff9933;
+}
+
+li.list-group-item:focus, li.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    background-color: white;
+}
+
+.glyphicon, a {
+    color: #ff9933;
+}
+
+.glyphicon:hover, a:hover {
+    color: #ff6600;
+}

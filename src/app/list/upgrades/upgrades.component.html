@@ -1,0 +1,11 @@
+<div class="btn-group" appDropdown>
+    <button type="button" class="btn btn-primary dropdown-toggle btn-xs">{{ title }} <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <!-- <app-upgrade-list *ngFor="let upgrade of availableUpgrades" [upgrade]="upgrade" [indexValue]="upgradeIndex"></app-upgrade-list> -->
+        <li *ngFor="let upgrade of availableUpgrades" (click)="onUpgradeSelected(upgrade)">
+            <ng-template #cardImage><img src="{{ upgrade.cardImage }}" width="200px" height="309px"></ng-template>
+            <span [popover]="cardImage" triggers="mouseenter:mouseleave" placement="left">{{ upgrade.name }} ({{ upgrade.cost }})</span>
+        </li>
+        <li (click)="onUpgradeSelected('none')">None</li>
+    </ul>
+</div>
