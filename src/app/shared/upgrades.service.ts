@@ -26,6 +26,7 @@ export class UpgradeService {
         // Comms
         new Upgrade('Comms Jammer', 15, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\Comms Jammer.png'),
         new Upgrade('Long-Range Comlink', 10, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\Long-Range Comlink.png'),
+        new Upgrade('HQ Uplink', 10, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\HQ Uplink.png'),
         // Command
         new Upgrade('Commanding Presence', 10, 'Command', '', '', 'assets\\images\\Cards\\Upgrades\\Commanding Presence.png'),
         new Upgrade('Esteemed Leader', 5, 'Command', '', '', 'assets\\images\\Cards\\Upgrades\\Esteemed Leader.png'),
