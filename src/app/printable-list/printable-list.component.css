@@ -4,4 +4,10 @@ li.dotless {
 
 li {
     list-style-position: inside;
+    list-style-type: none;
+}
+
+div {
+    margin-left: 10px;
+    margin-bottom: 10px;
 }

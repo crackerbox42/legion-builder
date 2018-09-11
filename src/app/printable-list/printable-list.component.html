@@ -1,20 +1,18 @@
-<div class="row">
-  <div class="col-xs-6 text-center">
-    <h1>Units</h1>
-    <span *ngFor="let unit of list" class="dotless">
-      {{ unit.name }} ({{ unit.cost }})
-      <span *ngFor="let upgrade of unit.chosenUpgrades">
-        <li *ngIf="upgrade.name" class="dotless"> - {{ upgrade.name }} ({{ upgrade.cost }})</li>
-      </span>
-      <br>
+<div>
+  <h1>Units</h1>
+  <span *ngFor="let unit of list" class="dotless">
+    {{ unit.name }} ({{ unit.cost }})
+    <span *ngFor="let upgrade of unit.chosenUpgrades">
+      <li *ngIf="upgrade.name" class="dotless"> - {{ upgrade.name }} ({{ upgrade.cost }})</li>
     </span>
+    <br>
+  </span>
   <h3>Total points: {{ points }}</h3>
-  </div>
-  <div class="col-xs-6 text-center">
-    <h1>Command Cards</h1>
-    <li *ngFor="let card of commandList">
-      {{ card.name }}
-    </li>
-  </div>
 </div>
-<div class="row text-center"><a routerLink="/">Back to List</a></div>
+<div>
+  <h1>Command Cards</h1>
+   <li *ngFor="let card of commandList">
+      - {{ card.name }} ({{ card.pips }})
+  </li>
+</div>
+<div class="text-center"><a routerLink="/">Back to List</a></div>
