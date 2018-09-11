@@ -31,7 +31,7 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.list = this.listService.getList();
-    this.totalPoints = 0;
+    this.totalPoints = this.listService.getPoints();
     this.armySize = this.listService.armyPoints;
     this.unitAmounts = this.listService.unitAmounts;
 

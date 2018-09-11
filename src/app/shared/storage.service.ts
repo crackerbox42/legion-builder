@@ -11,7 +11,7 @@ import { CommandCard } from './command.model';
   providedIn: 'root'
 })
 export class StorageService {
-  // list: Observable<Unit[]>;
+  unitList: Unit[];
 
   constructor(private http: Http) { }
 

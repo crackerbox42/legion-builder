@@ -20,6 +20,11 @@ export class CommandService {
         return this.list.slice();
     }
 
+    setCommandList(commands) {
+        this.list = commands;
+        this.listUpdated.emit(this.list.slice());
+    }
+
     resetList() {
         this.list = [];
         this.listUpdated.emit(this.list.slice());
