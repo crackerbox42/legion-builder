@@ -65,6 +65,28 @@ export class UnitsComponent implements OnInit {
       ['', '', '', '', ''],
       'assets\\images\\Cards\\Rebel Commandos - Strike Team.png'
     ),
+    new Unit(
+      'Scout Troopers',
+      '',
+      60,
+      'Special Forces',
+      'Trooper',
+      'Imperial',
+      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
+      ['', '', '', '', ''],
+      'assets\\images\\Cards\\Scout Troopers.png'
+    ),
+    new Unit(
+      'Scout Troopers',
+      'Strike Team',
+      16,
+      'Special Forces',
+      'Trooper',
+      'Imperial',
+      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
+      ['', '', '', '', ''],
+      'assets\\images\\Cards\\Scout Troopers - Strike Team.png'
+    ),
     new Unit('AT-RT', '', 55, 'Support', 'Ground Vehicle', 'Rebel', ['Hardpoint', 'Comms'], ['', ''], 'assets\\images\\Cards\\AT-RT.png'),
     // tslint:disable-next-line:max-line-length
     new Unit('T-47 Airspeeder', '', 175, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''], 'assets\\images\\Cards\\T-47 Airspeeder.png')

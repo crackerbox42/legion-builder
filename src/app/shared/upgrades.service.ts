@@ -117,6 +117,22 @@ export class UpgradeService {
             'assets\\images\\Cards\\Upgrades\\Proton Charge Saboteur.png'
         ),
         new Upgrade(
+            'DLT-19x Sniper',
+            28,
+            'Heavy Weapon',
+            'Scout Troopers',
+            '',
+            'assets\\images\\Cards\\Upgrades\\DLT-19x Sniper.png'
+        ),
+        new Upgrade(
+            'Sonic Charge Saboteur',
+            26,
+            'Heavy Weapon',
+            'Scout Troopers',
+            '',
+            'assets\\images\\Cards\\Upgrades\\Sonic Charge Saboteur.png'
+        ),
+        new Upgrade(
             'DLT-19 Stormtrooper',
             24, 'Heavy Weapon', 'Stormtroopers', '', 'assets\\images\\Cards\\Upgrades\\DLT-19 Stormtrooper.png'
         ),
