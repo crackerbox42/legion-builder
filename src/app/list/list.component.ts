@@ -64,22 +64,22 @@ export class ListComponent implements OnInit {
     this.unitAmounts = this.listService.getUnitAmounts(size);
   }
 
-  onSaveList() {
-    const fullList = {
-      list: this.list,
-      commands: this.commandService.getCommandList()
-    };
-    console.log(fullList);
-    this.storageService.saveList(fullList).subscribe(
-      (response) => {
-        this.responseText = response.json();
-        console.log(this.responseText.name);
-        // tslint:disable-next-line:max-line-length
-        alert('This list has been saved. You can access this list by using the following ID when loading a list: ' + this.responseText.name);
-      },
-      (error) => console.log(error)
-    );
-  }
+  // onSaveList() {
+  //   const fullList = {
+  //     list: this.list,
+  //     commands: this.commandService.getCommandList()
+  //   };
+  //   console.log(fullList);
+  //   this.storageService.saveList(fullList).subscribe(
+  //     (response) => {
+  //       this.responseText = response.json();
+  //       console.log(this.responseText.name);
+  // tslint:disable-next-line:max-line-length
+  //       alert('This list has been saved. You can access this list by using the following ID when loading a list: ' + this.responseText.name);
+  //     },
+  //     (error) => console.log(error)
+  //   );
+  // }
 
   togglePointsColor() {
     if (this.validPoints) {

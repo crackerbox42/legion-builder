@@ -28,6 +28,7 @@ import { StorageService } from './shared/storage.service';
 import { HttpModule } from '@angular/http';
 import { SavedListComponent } from './saved-list/saved-list.component';
 import { FormsModule } from '@angular/forms';
+import { FullListService } from './shared/full-list.service';
 
 
 const appRoutes: Routes = [
@@ -64,7 +65,7 @@ const appRoutes: Routes = [
     PopoverModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [ListService, UpgradeService, CommandService, StorageService],
+  providers: [ListService, UpgradeService, CommandService, StorageService, FullListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

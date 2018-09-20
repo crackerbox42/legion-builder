@@ -26,7 +26,7 @@ export class UnitsComponent implements OnInit {
       'assets\\images\\Cards\\Boba Fett.png'
     ),
     // tslint:disable-next-line:max-line-length
-    new Unit('Stormtroopers', '', 40, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Stormtroopers.png'),
+    new Unit('Stormtroopers', '', 44, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Stormtroopers.png'),
     // tslint:disable-next-line:max-line-length
     new Unit('Snowtroopers', '', 48, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Snowtroopers.png'),
     // tslint:disable-next-line:max-line-length
