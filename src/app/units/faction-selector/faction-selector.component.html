@@ -1,5 +1,22 @@
 <ul class="nav nav-tabs">
   <li><h4>Faction:</h4></li>
-  <li><a href="#" (click)="setFaction('Imperial')"><img src="assets\images\Imperial_Emblem.png" width="25px" height="25px"></a></li>
-  <li><a href="#" (click)="setFaction('Rebel')"><img src="assets\images\Redstarbird.png" width="25px" height="25px"></a></li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" (click)="setFaction('Imperial')"><img src="assets\images\Imperial_Emblem.png" width="25px" height="25px"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" (click)="setFaction('Rebel')"><img src="assets\images\Redstarbird.png" width="25px" height="25px"></a>
+  </li>
+  <li class="nav-item dropdown" style="float: right">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href='#'><img src="assets\images\gear.png"></a>
+    <div class=" dropdown-menu">
+      <a class="dropdown-item" href="#" (click)="toggleUnreleased()">Show/Hide Unrelease Units</a>
+    </div>
+  </li>
 </ul>
+
+<!-- <div class="dropdown" style="float: right">
+    <img class="dropdown-toggle" id="settingsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="assets\images\gear.png">
+    <div class=" dropdown-menu" aria-labelledby="settingsDropdown">
+      <a class="dropdown-item" href="#" (click)="toggleUnreleased()">Show/Hide Unrelease Units</a>
+    </div>
+</div> -->

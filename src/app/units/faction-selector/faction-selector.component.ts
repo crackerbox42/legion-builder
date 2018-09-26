@@ -9,7 +9,9 @@ import { CommandService } from '../../shared/command.service';
 })
 export class FactionSelectorComponent implements OnInit {
   @Output() factionSelected = new EventEmitter<string>();
+  @Output() unreleasedToggled = new EventEmitter<boolean>();
   currentFaction = 'Imperial';
+  showUnreleased = false;
 
   constructor(private listService: ListService, private commandService: CommandService) { }
 
@@ -32,6 +34,11 @@ export class FactionSelectorComponent implements OnInit {
         this.currentFaction = faction;
       }
     }
+  }
+
+  toggleUnreleased() {
+    this.showUnreleased = !this.showUnreleased;
+    this.unreleasedToggled.emit(this.showUnreleased);
   }
 
 }

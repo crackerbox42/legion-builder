@@ -37,6 +37,9 @@ export class UpgradeService {
         // Pilot
         new Upgrade('General Weiss', 10, 'Pilot', 'Ground Vehicle', 'Imperial', 'assets\\images\\Cards\\Upgrades\\General Weiss.png'),
         new Upgrade('Wedge Antilles', 5, 'Pilot', 'Repulsor Vehicle', 'Rebel', 'assets\\images\\Cards\\Upgrades\\Wedge Antilles.png'),
+        // Generator
+        new Upgrade('Barrage Generator', 10, 'Generator', '', '', 'assets\\images\\Cards\\Upgrades\\Barrage Generator.png'),
+        new Upgrade('Overcharged Generator', 10, 'Generator', '', '', 'assets\\images\\Cards\\Upgrades\\Overcharged Generator.png'),
         // Hardpoint
         new Upgrade(
             '88 Twin Light Blaster Cannon',

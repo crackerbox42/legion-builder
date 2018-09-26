@@ -48,7 +48,8 @@ export class SavedListComponent implements OnInit {
             unit.faction,
             unit.availableUpgrades,
             unit.chosenUpgrades,
-            unit.image)
+            unit.image,
+            unit.released)
             );
         });
         return result; // <<<=== missing return

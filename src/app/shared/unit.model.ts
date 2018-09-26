@@ -8,6 +8,7 @@ export class Unit {
         public faction: string,
         public availableUpgrades,
         public chosenUpgrades,
-        public image: string
+        public image: string,
+        public released: boolean
     ) {}
 }

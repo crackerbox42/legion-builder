@@ -1,5 +1,5 @@
 <h3 class="text-center">Units</h3>
-<app-faction-selector (factionSelected)="displayFaction($event)"></app-faction-selector>
+<app-faction-selector (factionSelected)="displayFaction($event)" (unreleasedToggled)="toggleUnreleased($event)"></app-faction-selector>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
@@ -11,7 +11,7 @@
         </div>
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Commander'" [unit]="mini"></app-unit-detail></span>
+                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Commander' && (mini.released || showUnreleased)" [unit]="mini"></app-unit-detail></span>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Operative'" [unit]="mini"></app-unit-detail></span>
+                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Operative'  && (mini.released || showUnreleased)" [unit]="mini"></app-unit-detail></span>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
-                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Corps'" [unit]="mini"></app-unit-detail></span>
+                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Corps' && (mini.released || showUnreleased)" [unit]="mini"></app-unit-detail></span>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
         </div>
         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
             <div class="panel-body">
-                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Special Forces'" [unit]="mini"></app-unit-detail></span>
+                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Special Forces' && (mini.released || showUnreleased)" [unit]="mini"></app-unit-detail></span>
             </div>
         </div>
     </div>
@@ -67,7 +67,7 @@
         </div>
         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
             <div class="panel-body">
-                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Support'" [unit]="mini"></app-unit-detail></span>
+                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Support' && (mini.released || showUnreleased)" [unit]="mini"></app-unit-detail></span>
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@
         </div>
         <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
             <div class="panel-body">
-                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Heavy'" [unit]="mini"></app-unit-detail></span>
+                <span *ngFor="let mini of units"><app-unit-detail *ngIf="mini.faction === currentFaction && mini.rank === 'Heavy' && (mini.released || showUnreleased)" [unit]="mini"></app-unit-detail></span>
             </div>
         </div>
     </div>

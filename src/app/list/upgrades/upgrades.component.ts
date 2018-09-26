@@ -62,6 +62,9 @@ export class UpgradesComponent implements OnInit {
       case 'Training':
         this.availableUpgrades = this.upgradeService.getUpgrades('Training', this.unit.name, this.unit.faction, this.unit.type);
         break;
+      case 'Generator':
+        this.availableUpgrades = this.upgradeService.getUpgrades('Generator', this.unit.name, this.unit.faction, this.unit.type);
+        break;
     }
   }
 
