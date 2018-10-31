@@ -162,7 +162,7 @@ export class UnitsComponent implements OnInit {
       ['Comms', 'Generator'],
       ['', ''],
       'assets\\images\\Cards\\14 FD Laser Cannon Team.png',
-      false
+      true
     ),
     new Unit(
       'E-Web Heavy Blaster Team',
@@ -174,7 +174,7 @@ export class UnitsComponent implements OnInit {
       ['Comms', 'Generator'],
       ['', ''],
       'assets\\images\\Cards\\E-Web Heavy Blaster Team.png',
-      false
+      true
     ),
     // tslint:disable-next-line:max-line-length
     new Unit('T-47 Airspeeder', '', 175, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''], 'assets\\images\\Cards\\T-47 Airspeeder.png', true)

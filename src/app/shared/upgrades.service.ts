@@ -15,6 +15,8 @@ export class UpgradeService {
         new Upgrade('Snowtrooper', 12, 'Personnel', 'Snowtroopers', '', 'assets\\images\\Cards\\Upgrades\\Snowtrooper.png'),
         new Upgrade('Rebel Trooper', 10, 'Personnel', 'Rebel Troopers', '', 'assets\\images\\Cards\\Upgrades\\Rebel Trooper.png'),
         new Upgrade('Fleet Trooper', 11, 'Personnel', 'Fleet Troopers', '', 'assets\\images\\Cards\\Upgrades\\Fleet Trooper.png'),
+        new Upgrade('Rebel Comms Technician', 9, 'Personnel', '', 'Rebel',
+            'assets\\images\\Cards\\Upgrades\\Rebel Comms Technician.png'),
         // Gear
         new Upgrade('Targeting Scopes', 6, 'Gear', '', '', 'assets\\images\\Cards\\Upgrades\\Targeting Scopes.png'),
         new Upgrade('Grappling Hooks', 3, 'Gear', '', '', 'assets\\images\\Cards\\Upgrades\\Grappling Hooks.png'),
