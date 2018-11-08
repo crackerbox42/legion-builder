@@ -5,11 +5,12 @@ export class UpgradeService {
     allUpgrades = [
         // Force
         new Upgrade('Force Choke', 5, 'Force', '', 'Imperial', 'assets\\images\\Cards\\Upgrades\\Force Choke.png'),
+        new Upgrade('Jedi Mind Trick', 5, 'Force', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\Jedi Mind Trick.png'),
+        new Upgrade('Anger', 5, 'Force', '', 'Imperial', 'assets\\images\\Cards\\Upgrades\\Anger.png'),
         new Upgrade('Saber Throw', 10, 'Force', '', '', 'assets\\images\\Cards\\Upgrades\\Saber Throw.png'),
         new Upgrade('Force Push', 10, 'Force', '', '', 'assets\\images\\Cards\\Upgrades\\Force Push.png'),
-        new Upgrade('Force Reflexes', 15, 'Force', '', '', 'assets\\images\\Cards\\Upgrades\\Force Reflexes.png'),
         new Upgrade('Battle Meditation', 10, 'Force', '', '', 'assets\\images\\Cards\\Upgrades\\Battle Meditation.png'),
-        new Upgrade('Jedi Mind Trick', 5, 'Force', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\Jedi Mind Trick.png'),
+        new Upgrade('Force Reflexes', 15, 'Force', '', '', 'assets\\images\\Cards\\Upgrades\\Force Reflexes.png'),
         // Personnel
         new Upgrade('Stormtrooper', 11, 'Personnel', 'Stormtroopers', '', 'assets\\images\\Cards\\Upgrades\\Stormtrooper.png'),
         new Upgrade('Snowtrooper', 12, 'Personnel', 'Snowtroopers', '', 'assets\\images\\Cards\\Upgrades\\Snowtrooper.png'),

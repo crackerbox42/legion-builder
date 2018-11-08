@@ -4,6 +4,7 @@ import { CommandCard } from './command.model';
 export class List {
     constructor(
         public name: String,
+        public faction: String,
         public units: Unit[],
         public points: number,
         public commandCards: CommandCard[],

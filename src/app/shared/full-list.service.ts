@@ -8,7 +8,7 @@ import { Upgrade } from './upgrade.model';
   providedIn: 'root'
 })
 export class FullListService {
-  list = new List('', [], 0, [], 800);
+  list = new List('', '', [], 0, [], 800);
   listUpdated = new EventEmitter<any>();
   unitAmounts = {
     commander: {amount: 0, minimum: 1, maximum: 2, color: 'red'},
@@ -73,6 +73,7 @@ export class FullListService {
   resetList() {
     this.list = {
       name: '',
+      faction: '',
       units: [],
       points: 0,
       commandCards: [],

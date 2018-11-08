@@ -24,7 +24,7 @@ export class UnitsComponent implements OnInit {
       ['Force', 'Force', 'Force', 'Command'],
       ['', '', '', ''],
       'assets\\images\\Cards\\Emperor Palpatine.png',
-      false
+      true
     ),
     new Unit(
       'Boba Fett',
@@ -183,24 +183,29 @@ export class UnitsComponent implements OnInit {
   commandCards = [
     new CommandCard('Ambush', 1, '', 'assets\\images\\Cards\\Command Cards\\Ambush.png', true),
     new CommandCard('Son of Skywalker', 1, 'Luke Skywalker', 'assets\\images\\Cards\\Command Cards\\Son of Skywalker.png', false),
-    // tslint:disable-next-line:max-line-length
-    new CommandCard('Coordinated Bombardment', 1, 'Leia Organa', 'assets\\images\\Cards\\Command Cards\\Coordinated Bombardment.png', false),
+    new CommandCard('Coordinated Bombardment', 1, 'Leia Organa',
+      'assets\\images\\Cards\\Command Cards\\Coordinated Bombardment.png', false),
     new CommandCard('Implacable', 1, 'Darth Vader', 'assets\\images\\Cards\\Command Cards\\Implacable.png', false),
     new CommandCard('Maximum Firepower', 1, 'General Veers', 'assets\\images\\Cards\\Command Cards\\Maximum Firepower.png', false),
     new CommandCard('Sorry About the Mess', 1, 'Han Solo', 'assets\\images\\Cards\\Command Cards\\Sorry About the Mess.png', false),
     new CommandCard('Whipcord Launcher', 1, 'Boba Fett', 'assets\\images\\Cards\\Command Cards\\Whipcord Launcher.png', false),
+    new CommandCard('And Now...You Will Die', 1, 'Emperor Palpatine',
+      'assets\\images\\Cards\\Command Cards\\And Now You Will Die.png', false),
     new CommandCard('Push', 2, '', 'assets\\images\\Cards\\Command Cards\\Push.png', true),
     new CommandCard('My Ally Is the Force', 2, 'Luke Skywalker', 'assets\\images\\Cards\\Command Cards\\My Ally Is the Force.png', false),
     new CommandCard('No Time for Sorrows', 2, 'Leia Organa', 'assets\\images\\Cards\\Command Cards\\No Time for Sorrows.png', false),
-    // tslint:disable-next-line:max-line-length
-    new CommandCard('New Ways to Motivate Them', 2, 'Darth Vader', 'assets\\images\\Cards\\Command Cards\\New Ways to Motivate Them.png', false),
-    new CommandCard('Evasive Maneuvers', 2, 'General Veers', 'assets\\images\\Cards\\Command Cards\\Evasive Maneuvers.png', false),
+    new CommandCard('New Ways to Motivate Them', 2, 'Darth Vader',
+      'assets\\images\\Cards\\Command Cards\\New Ways to Motivate Them.png', false),
+    new CommandCard('Evasive Maneuvers', 2, 'General Veers',
+      'assets\\images\\Cards\\Command Cards\\Evasive Maneuvers.png', false),
     new CommandCard('Reckless Diversion', 2, 'Han Solo', 'assets\\images\\Cards\\Command Cards\\Reckless Diversion.png', false),
     new CommandCard('ZX Flame Projector', 2, 'Boba Fett', 'assets\\images\\Cards\\Command Cards\\ZX Flame Projector.png', false),
+    new CommandCard('Give in to Your Anger', 2, 'Emperor Palpatine',
+      'assets\\images\\Cards\\Command Cards\\Give in to Your Anger.png', false),
     new CommandCard('Assault', 3, '', 'assets\\images\\Cards\\Command Cards\\Assault.png', true),
     new CommandCard('Return of the Jedi', 3, 'Luke Skywalker', 'assets\\images\\Cards\\Command Cards\\Return of the Jedi.png', false),
-    // tslint:disable-next-line:max-line-length
-    new CommandCard('Somebody Has to Save Our Skins', 3, 'Leia Organa', 'assets\\images\\Cards\\Command Cards\\Somebody Has to Save Our Skins.png', false),
+    new CommandCard('Somebody Has to Save Our Skins', 3, 'Leia Organa',
+      'assets\\images\\Cards\\Command Cards\\Somebody Has to Save Our Skins.png', false),
     new CommandCard('Master of Evil', 3, 'Darth Vader', 'assets\\images\\Cards\\Command Cards\\Master of Evil.png', false),
     new CommandCard('Imperial Discipline', 3, 'General Veers', 'assets\\images\\Cards\\Command Cards\\Imperial Discipline.png', false),
     new CommandCard('Change of Plans', 3, 'Han Solo', 'assets\\images\\Cards\\Command Cards\\Change of Plans.png', false),
