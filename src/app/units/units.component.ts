@@ -10,174 +10,63 @@ import { ListService } from '../shared/list.service';
 })
 export class UnitsComponent implements OnInit {
   units: Unit[] = [
-    // tslint:disable-next-line:max-line-length
-    new Unit('Darth Vader', '', 200, 'Commander', 'Trooper', 'Imperial', ['Force', 'Force', 'Force'], ['', '', ''], 'assets\\images\\Cards\\Darth Vader.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('General Veers', '', 80, 'Commander', 'Trooper', 'Imperial', ['Command', 'Command', 'Gear'], ['', '', ''], 'assets\\images\\Cards\\General Veers.png', true),
-    new Unit(
-      'Emperor Palpatine',
-      '',
-      210,
-      'Commander',
-      'Trooper',
-      'Imperial',
-      ['Force', 'Force', 'Force', 'Command'],
-      ['', '', '', ''],
-      'assets\\images\\Cards\\Emperor Palpatine.png',
-      true
-    ),
-    new Unit(
-      'Boba Fett',
-      '',
-      140,
-      'Operative',
-      'Trooper',
-      'Imperial',
-      ['Training', 'Training', 'Gear', 'Gear'],
-      ['', '', '', ''],
-      'assets\\images\\Cards\\Boba Fett.png',
-      true
-    ),
-    new Unit(
-      'Chewbacca',
-      '',
-      110,
-      'Operative',
-      'Trooper',
-      'Rebel',
-      ['Training', 'Training', 'Gear'],
-      ['', '', ''],
-      'assets\\images\\Cards\\Chewbacca.png',
-      false
-    ),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Stormtroopers', '', 44, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Stormtroopers.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Snowtroopers', '', 48, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Snowtroopers.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('74-Z Speeder Bikes', '', 90, 'Support', 'Repulsor Vehicle', 'Imperial', ['Comms'], [''], 'assets\\images\\Cards\\74-Z Speeder Bikes.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('AT-ST', '', 195, 'Heavy', 'Ground Vehicle', 'Imperial', ['Pilot', 'Hardpoint', 'Hardpoint', 'Hardpoint', 'Comms'], ['', '', '', '', ''], 'assets\\images\\Cards\\AT-ST.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Luke Skywalker', '', 160, 'Commander', 'Trooper', 'Rebel', ['Force', 'Force', 'Gear'], ['', '', ''], 'assets\\images\\Cards\\Luke Skywalker.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Leia Organa', '', 90, 'Commander', 'Trooper', 'Rebel', ['Command', 'Command', 'Gear'], ['', '', ''], 'assets\\images\\Cards\\Leia Organa.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Han Solo', '', 120, 'Commander', 'Trooper', 'Rebel', ['Command', 'Training', 'Gear'], ['', '', ''], 'assets\\images\\Cards\\Han Solo.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Rebel Troopers', '', 40, 'Corps', 'Trooper', 'Rebel', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Rebel Troopers.png', true),
-    // tslint:disable-next-line:max-line-length
-    new Unit('Fleet Troopers', '', 44, 'Corps', 'Trooper', 'Rebel', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''], 'assets\\images\\Cards\\Fleet Troopers.png', true),
-    new Unit(
-      'Rebel Commandos',
-      '',
-      60,
-      'Special Forces',
-      'Trooper',
-      'Rebel',
-      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
-      ['', '', '', '', ''],
-      'assets\\images\\Cards\\Rebel Commandos.png',
-      true
-    ),
-    new Unit(
-      'Rebel Commandos',
-      'Strike Team',
-      16,
-      'Special Forces',
-      'Trooper',
-      'Rebel',
-      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
-      ['', '', '', '', ''],
-      'assets\\images\\Cards\\Rebel Commandos - Strike Team.png',
-      true
-    ),
-    new Unit(
-      'Scout Troopers',
-      '',
-      60,
-      'Special Forces',
-      'Trooper',
-      'Imperial',
-      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
-      ['', '', '', '', ''],
-      'assets\\images\\Cards\\Scout Troopers.png',
-      true
-    ),
-    new Unit(
-      'Scout Troopers',
-      'Strike Team',
-      16,
-      'Special Forces',
-      'Trooper',
-      'Imperial',
-      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
-      ['', '', '', '', ''],
-      'assets\\images\\Cards\\Scout Troopers - Strike Team.png',
-      true
-    ),
-    new Unit(
-      'Wookiee Warriors',
-      '',
-      75,
-      'Special Forces',
-      'Trooper',
-      'Rebel',
-      ['Heavy Weapon', 'Training', 'Training', 'Gear', 'Grenades'],
-      ['', '', '', '', ''],
-      'assets\\images\\Cards\\Wookiee Warriors.png',
-      false
-    ),
-    new Unit(
-      'Imperial Royal Guards',
-      '',
-      75,
-      'Special Forces',
-      'Trooper',
-      'Imperial',
-      ['Heavy Weapon', 'Training', 'Training', 'Gear', 'Grenades'],
-      ['', '', '', '', ''],
-      'assets\\images\\Cards\\Imperial Royal Guards.png',
-      false
-    ),
-    new Unit(
-      'AT-RT',
-      '',
-      55,
-      'Support',
-      'Ground Vehicle',
-      'Rebel',
-      ['Hardpoint', 'Comms'],
-      ['', ''],
-      'assets\\images\\Cards\\AT-RT.png',
-      true
-    ),
-    new Unit(
-      '1.4 FD Laser Cannon Team',
-      '',
-      70,
-      'Support',
-      'Emplacement Trooper',
-      'Rebel',
-      ['Comms', 'Generator'],
-      ['', ''],
-      'assets\\images\\Cards\\14 FD Laser Cannon Team.png',
-      true
-    ),
-    new Unit(
-      'E-Web Heavy Blaster Team',
-      '',
-      55,
-      'Support',
-      'Emplacement Trooper',
-      'Imperial',
-      ['Comms', 'Generator'],
-      ['', ''],
-      'assets\\images\\Cards\\E-Web Heavy Blaster Team.png',
-      true
-    ),
-    // tslint:disable-next-line:max-line-length
-    new Unit('T-47 Airspeeder', '', 175, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''], 'assets\\images\\Cards\\T-47 Airspeeder.png', true)
+    // Commanders
+    new Unit('Darth Vader', '', 200, 'Commander', 'Trooper', 'Imperial', ['Force', 'Force', 'Force'], ['', '', ''],
+      'assets\\images\\Cards\\Darth Vader.png', true),
+    new Unit('Emperor Palpatine', '', 210, 'Commander', 'Trooper', 'Imperial', ['Force', 'Force', 'Force', 'Command'], ['', '', '', ''],
+      'assets\\images\\Cards\\Emperor Palpatine.png', true),
+    new Unit('General Veers', '', 80, 'Commander', 'Trooper', 'Imperial', ['Command', 'Command', 'Gear'], ['', '', ''],
+      'assets\\images\\Cards\\General Veers.png', true),
+    new Unit('Han Solo', '', 120, 'Commander', 'Trooper', 'Rebel', ['Command', 'Training', 'Gear'], ['', '', ''],
+      'assets\\images\\Cards\\Han Solo.png', true),
+    new Unit('Leia Organa', '', 90, 'Commander', 'Trooper', 'Rebel', ['Command', 'Command', 'Gear'], ['', '', ''],
+      'assets\\images\\Cards\\Leia Organa.png', true),
+    new Unit('Luke Skywalker', '', 160, 'Commander', 'Trooper', 'Rebel', ['Force', 'Force', 'Gear'], ['', '', ''],
+      'assets\\images\\Cards\\Luke Skywalker.png', true),
+    // Operatives
+    new Unit('Boba Fett', '', 140, 'Operative', 'Trooper', 'Imperial', ['Training', 'Training', 'Gear', 'Gear'], ['', '', '', ''],
+      'assets\\images\\Cards\\Boba Fett.png', true),
+    new Unit('Chewbacca', '', 110, 'Operative', 'Trooper', 'Rebel', ['Training', 'Training', 'Gear'], ['', '', ''],
+        'assets\\images\\Cards\\Chewbacca.png', true),
+    // Corps
+    new Unit('Fleet Troopers', '', 44, 'Corps', 'Trooper', 'Rebel', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
+      'assets\\images\\Cards\\Fleet Troopers.png', true),
+    new Unit('Rebel Troopers', '', 40, 'Corps', 'Trooper', 'Rebel', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
+      'assets\\images\\Cards\\Rebel Troopers.png', true),
+    new Unit('Snowtroopers', '', 48, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
+      'assets\\images\\Cards\\Snowtroopers.png', true),
+    new Unit('Stormtroopers', '', 44, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
+      'assets\\images\\Cards\\Stormtroopers.png', true),
+    // Special Forces
+    new Unit('Imperial Royal Guards', '', 75, 'Special Forces', 'Trooper', 'Imperial',
+      ['Heavy Weapon', 'Training', 'Training', 'Gear', 'Grenades'], ['', '', '', '', ''],
+      'assets\\images\\Cards\\Imperial Royal Guards.png', true),
+    new Unit('Rebel Commandos', '', 60, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
+      ['', '', '', '', ''], 'assets\\images\\Cards\\Rebel Commandos.png', true),
+    new Unit('Rebel Commandos', 'Strike Team', 16, 'Special Forces', 'Trooper', 'Rebel',
+      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'], ['', '', '', '', ''],
+      'assets\\images\\Cards\\Rebel Commandos - Strike Team.png', true),
+    new Unit('Scout Troopers', '', 60, 'Special Forces', 'Trooper', 'Imperial', ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
+      ['', '', '', '', ''], 'assets\\images\\Cards\\Scout Troopers.png', true),
+    new Unit('Scout Troopers', 'Strike Team', 16, 'Special Forces', 'Trooper', 'Imperial',
+      ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'], ['', '', '', '', ''],
+      'assets\\images\\Cards\\Scout Troopers - Strike Team.png', true),
+    new Unit('Wookiee Warriors', '', 75, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Training', 'Training', 'Gear', 'Grenades'],
+      ['', '', '', '', ''], 'assets\\images\\Cards\\Wookiee Warriors.png', false),
+    // Supports
+    new Unit('1.4 FD Laser Cannon Team', '', 70, 'Support', 'Emplacement Trooper', 'Rebel', ['Comms', 'Generator'], ['', ''],
+      'assets\\images\\Cards\\14 FD Laser Cannon Team.png', true),
+    new Unit('74-Z Speeder Bikes', '', 90, 'Support', 'Repulsor Vehicle', 'Imperial', ['Comms'], [''],
+      'assets\\images\\Cards\\74-Z Speeder Bikes.png', true),
+    new Unit('AT-RT', '', 55, 'Support', 'Ground Vehicle', 'Rebel', ['Hardpoint', 'Comms'], ['', ''],
+      'assets\\images\\Cards\\AT-RT.png', true),
+    new Unit('E-Web Heavy Blaster Team', '', 55, 'Support', 'Emplacement Trooper', 'Imperial', ['Comms', 'Generator'], ['', ''],
+      'assets\\images\\Cards\\E-Web Heavy Blaster Team.png', true),
+    // Heavies
+    new Unit('AT-ST', '', 195, 'Heavy', 'Ground Vehicle', 'Imperial', ['Pilot', 'Hardpoint', 'Hardpoint', 'Hardpoint', 'Comms'],
+      ['', '', '', '', ''], 'assets\\images\\Cards\\AT-ST.png', true),
+    new Unit('T-47 Airspeeder', '', 175, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''],
+      'assets\\images\\Cards\\T-47 Airspeeder.png', true)
   ];
 
   commandCards = [
