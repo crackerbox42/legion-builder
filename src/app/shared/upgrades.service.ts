@@ -60,6 +60,8 @@ export class UpgradeService {
         new Upgrade('Mo/Dk Power Harpoon', 8, 'Hardpoint', 'T-47 Airspeeder', '',
             'assets\\images\\Cards\\Upgrades\\MoDk Power Harpoon.png'),
         // Heavy Weapon
+        new Upgrade('Bowcaster Wookiee', 35, 'Heavy Weapon', 'Wookiee Warriors', '',
+        'assets\\images\\Cards\\Upgrades\\Bowcaster Wookiee.png'),
         new Upgrade('DH-447 Sniper', 28, 'Heavy Weapon', 'Rebel Commandos', '', 'assets\\images\\Cards\\Upgrades\\DH-447 Sniper.png'),
         new Upgrade('DLT-19 Stormtrooper', 24, 'Heavy Weapon', 'Stormtroopers', '',
             'assets\\images\\Cards\\Upgrades\\DLT-19 Stormtrooper.png'),
