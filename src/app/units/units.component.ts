@@ -52,7 +52,7 @@ export class UnitsComponent implements OnInit {
       ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'], ['', '', '', '', ''],
       'assets\\images\\Cards\\Scout Troopers - Strike Team.png', true),
     new Unit('Wookiee Warriors', '', 75, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Training', 'Training', 'Gear', 'Grenades'],
-      ['', '', '', '', ''], 'assets\\images\\Cards\\Wookiee Warriors.png', false),
+      ['', '', '', '', ''], 'assets\\images\\Cards\\Wookiee Warriors.png', true),
     // Supports
     new Unit('1.4 FD Laser Cannon Team', '', 70, 'Support', 'Emplacement Trooper', 'Rebel', ['Comms', 'Generator'], ['', ''],
       'assets\\images\\Cards\\14 FD Laser Cannon Team.png', true),
