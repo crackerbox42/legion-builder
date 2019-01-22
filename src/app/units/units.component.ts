@@ -23,6 +23,8 @@ export class UnitsComponent implements OnInit {
       'assets\\images\\Cards\\Leia Organa.png', true),
     new Unit('Luke Skywalker', '', 160, 'Commander', 'Trooper', 'Rebel', ['Force', 'Force', 'Gear'], ['', '', ''],
       'assets\\images\\Cards\\Luke Skywalker.png', true),
+    new Unit('Rebel Officer', '', 50, 'Commander', 'Trooper', 'Rebel', ['Command', 'Gear'], ['', ''],
+      'assets\\images\\Cards\\Rebel Officer.png', true),
     // Operatives
     new Unit('Boba Fett', '', 140, 'Operative', 'Trooper', 'Imperial', ['Training', 'Training', 'Gear', 'Gear'], ['', '', '', ''],
       'assets\\images\\Cards\\Boba Fett.png', true),
@@ -71,6 +73,7 @@ export class UnitsComponent implements OnInit {
 
   commandCards = [
     new CommandCard('Ambush', 1, '', 'assets\\images\\Cards\\Command Cards\\Ambush.png', true),
+    new CommandCard('Sabotaged Communications', 1, '', 'assets\\images\\Cards\\Command Cards\\Sabotaged Communications.png', true),
     new CommandCard('Son of Skywalker', 1, 'Luke Skywalker', 'assets\\images\\Cards\\Command Cards\\Son of Skywalker.png', false),
     new CommandCard('Coordinated Bombardment', 1, 'Leia Organa',
       'assets\\images\\Cards\\Command Cards\\Coordinated Bombardment.png', false),
@@ -82,6 +85,7 @@ export class UnitsComponent implements OnInit {
       'assets\\images\\Cards\\Command Cards\\And Now You Will Die.png', false),
     new CommandCard('Common Cause', 1, 'Chewbacca', 'assets\\images\\Cards\\Command Cards\\Common Cause.png', false),
     new CommandCard('Push', 2, '', 'assets\\images\\Cards\\Command Cards\\Push.png', true),
+    new CommandCard('Turning the Tide', 2, '', 'assets\\images\\Cards\\Command Cards\\Turning the Tide.png', true),
     new CommandCard('My Ally Is the Force', 2, 'Luke Skywalker', 'assets\\images\\Cards\\Command Cards\\My Ally Is the Force.png', false),
     new CommandCard('No Time for Sorrows', 2, 'Leia Organa', 'assets\\images\\Cards\\Command Cards\\No Time for Sorrows.png', false),
     new CommandCard('New Ways to Motivate Them', 2, 'Darth Vader',
@@ -94,6 +98,7 @@ export class UnitsComponent implements OnInit {
       'assets\\images\\Cards\\Command Cards\\Give in to Your Anger.png', false),
     new CommandCard('Brains and Brawn', 2, 'Chewbacca', 'assets\\images\\Cards\\Command Cards\\Brains and Brawn.png', false),
     new CommandCard('Assault', 3, '', 'assets\\images\\Cards\\Command Cards\\Assault.png', true),
+    new CommandCard('Covering Fire', 3, '', 'assets\\images\\Cards\\Command Cards\\Covering Fire.png', true),
     new CommandCard('Return of the Jedi', 3, 'Luke Skywalker', 'assets\\images\\Cards\\Command Cards\\Return of the Jedi.png', false),
     new CommandCard('Somebody Has to Save Our Skins', 3, 'Leia Organa',
       'assets\\images\\Cards\\Command Cards\\Somebody Has to Save Our Skins.png', false),

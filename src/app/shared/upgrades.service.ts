@@ -12,9 +12,12 @@ export class UpgradeService {
         new Upgrade('Jedi Mind Trick', 5, 'Force', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\Jedi Mind Trick.png'),
         new Upgrade('Saber Throw', 10, 'Force', '', '', 'assets\\images\\Cards\\Upgrades\\Saber Throw.png'),
         // Personnel
+        new Upgrade('2-1B Medical Droid', 18, 'Personnel', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\2-1B Medical Droid.png'),
         new Upgrade('Fleet Trooper', 11, 'Personnel', 'Fleet Troopers', '', 'assets\\images\\Cards\\Upgrades\\Fleet Trooper.png'),
+        new Upgrade('R5 Astromech Droid', 8, 'Personnel', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\R5 Astromech Droid.png'),
         new Upgrade('Rebel Comms Technician', 9, 'Personnel', '', 'Rebel',
             'assets\\images\\Cards\\Upgrades\\Rebel Comms Technician.png'),
+        new Upgrade('Rebel Officer', 19, 'Personnel', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\Rebel Officer.png'),
         new Upgrade('Rebel Trooper', 10, 'Personnel', 'Rebel Troopers', '', 'assets\\images\\Cards\\Upgrades\\Rebel Trooper.png'),
         new Upgrade('Snowtrooper', 12, 'Personnel', 'Snowtroopers', '', 'assets\\images\\Cards\\Upgrades\\Snowtrooper.png'),
         new Upgrade('Stormtrooper', 11, 'Personnel', 'Stormtroopers', '', 'assets\\images\\Cards\\Upgrades\\Stormtrooper.png'),
