@@ -14,6 +14,11 @@ export class UpgradeService {
         // Personnel
         new Upgrade('2-1B Medical Droid', 18, 'Personnel', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\2-1B Medical Droid.png'),
         new Upgrade('Fleet Trooper', 11, 'Personnel', 'Fleet Troopers', '', 'assets\\images\\Cards\\Upgrades\\Fleet Trooper.png'),
+        new Upgrade('FX-9 Medical Droid', 19, 'Personnel', '', 'Imperial', 'assets\\images\\Cards\\Upgrades\\FX-9 Medical Droid.png'),
+        new Upgrade('Imperial Comms Technician', 10, 'Personnel', '', 'Imperial',
+            'assets\\images\\Cards\\Upgrades\\Imperial Comms Technician.png'),
+        new Upgrade('Imperial Officer', 20, 'Personnel', '', 'Imperial', 'assets\\images\\Cards\\Upgrades\\Imperial Officer.png'),
+        new Upgrade('R4 Astromech Droid', 9, 'Personnel', '', 'Imperial', 'assets\\images\\Cards\\Upgrades\\R4 Astromech Droid.png'),
         new Upgrade('R5 Astromech Droid', 8, 'Personnel', '', 'Rebel', 'assets\\images\\Cards\\Upgrades\\R5 Astromech Droid.png'),
         new Upgrade('Rebel Comms Technician', 9, 'Personnel', '', 'Rebel',
             'assets\\images\\Cards\\Upgrades\\Rebel Comms Technician.png'),
@@ -42,6 +47,7 @@ export class UpgradeService {
         // Training
         new Upgrade('Duck and Cover', 8, 'Training', '', '', 'assets\\images\\Cards\\Upgrades\\Duck and Cover.png'),
         new Upgrade('Hunter', 6, 'Training', '', '', 'assets\\images\\Cards\\Upgrades\\Hunter.png'),
+        new Upgrade('Overwatch', 4, 'Training', '', '', 'assets\\images\\Cards\\Upgrades\\Overwatch.png'),
         new Upgrade('Tenacity', 4, 'Training', '', '', 'assets\\images\\Cards\\Upgrades\\Tenacity.png'),
         // Pilot
         new Upgrade('General Weiss', 10, 'Pilot', 'Ground Vehicle', 'Imperial', 'assets\\images\\Cards\\Upgrades\\General Weiss.png'),
@@ -65,6 +71,7 @@ export class UpgradeService {
         // Heavy Weapon
         new Upgrade('Bowcaster Wookiee', 35, 'Heavy Weapon', 'Wookiee Warriors', '',
         'assets\\images\\Cards\\Upgrades\\Bowcaster Wookiee.png'),
+        new Upgrade('Bistan', 32, 'Heavy Weapon', 'Rebel Pathfinders', '', 'assets\\images\\Cards\\Upgrades\\Bistan.png'),
         new Upgrade('DH-447 Sniper', 28, 'Heavy Weapon', 'Rebel Commandos', '', 'assets\\images\\Cards\\Upgrades\\DH-447 Sniper.png'),
         new Upgrade('DLT-19 Stormtrooper', 24, 'Heavy Weapon', 'Stormtroopers', '',
             'assets\\images\\Cards\\Upgrades\\DLT-19 Stormtrooper.png'),
@@ -78,6 +85,7 @@ export class UpgradeService {
             'assets\\images\\Cards\\Upgrades\\MPL-57 Barrage Trooper.png'),
         new Upgrade('MPL-57 Ion Trooper', 32, 'Heavy Weapon', 'Rebel Troopers', '',
             'assets\\images\\Cards\\Upgrades\\MPL-57 Ion Trooper.png'),
+        new Upgrade('Pao', 22, 'Heavy Weapon', 'Rebel Pathfinders', '', 'assets\\images\\Cards\\Upgrades\\Pao.png'),
         new Upgrade('Proton Charge Saboteur', 26, 'Heavy Weapon', 'Rebel Commandos', '',
             'assets\\images\\Cards\\Upgrades\\Proton Charge Saboteur.png'),
         new Upgrade('Scatter Gun Trooper', 23, 'Heavy Weapon', 'Fleet Troopers', '',
@@ -86,7 +94,11 @@ export class UpgradeService {
             'assets\\images\\Cards\\Upgrades\\Sonic Charge Saboteur.png'),
         new Upgrade('T-7 Ion Snowtrooper', 34, 'Heavy Weapon', 'Snowtroopers', '',
             'assets\\images\\Cards\\Upgrades\\T-7 Ion Snowtrooper.png'),
-        new Upgrade('Z-6 Trooper', 22, 'Heavy Weapon', 'Rebel Troopers', '', 'assets\\images\\Cards\\Upgrades\\Z-6 Trooper.png')
+        new Upgrade('Z-6 Trooper', 22, 'Heavy Weapon', 'Rebel Troopers', '', 'assets\\images\\Cards\\Upgrades\\Z-6 Trooper.png'),
+        // Armament
+        new Upgrade('A-180 Pistol/Rifle', 0, 'Armament', 'Jyn Erso', '', 'assets\\images\\Cards\\Upgrades\\A-180 Pistol-Rifle.gif'),
+        new Upgrade('A-300 Short/Long', 6, 'Armament', 'Rebel Pathfinders', '', 'assets\\images\\Cards\\Upgrades\\A-300.gif')
+
     ];
     upgradeSelected = new EventEmitter<any>();
     dark = 'Dark';
