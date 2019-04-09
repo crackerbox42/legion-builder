@@ -67,6 +67,7 @@ export class SavedListComponent implements OnInit {
             card.name,
             card.pips,
             card.unitRestriction,
+            card.factionRestriction,
             card.image,
             card.toDisplay)
             );

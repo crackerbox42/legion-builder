@@ -87,5 +87,5 @@
     </div>
 </div>
 <h3 class="text-center">Command Cards</h3>
-<span *ngFor="let card of commandCards"><app-command-list *ngIf="card.toDisplay" [card]="card"></app-command-list></span>
+<span *ngFor="let card of commandCards"><app-command-list *ngIf="card.toDisplay && ((card.factionRestriction === currentFaction) || (card.factionRestriction === ''))" [card]="card"></app-command-list></span>
 

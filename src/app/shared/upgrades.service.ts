@@ -38,6 +38,7 @@ export class UpgradeService {
         new Upgrade('Impact Grenades', 5, 'Grenades', '', '', 'assets\\images\\Cards\\Upgrades\\Impact Grenades.png'),
         // Comms
         new Upgrade('Comms Jammer', 15, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\Comms Jammer.png'),
+        new Upgrade('Comms Relay', 5, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\Comms Relay.png'),
         new Upgrade('HQ Uplink', 10, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\HQ Uplink.png'),
         new Upgrade('Long-Range Comlink', 10, 'Comms', '', '', 'assets\\images\\Cards\\Upgrades\\Long-Range Comlink.png'),
         // Command
@@ -50,7 +51,11 @@ export class UpgradeService {
         new Upgrade('Overwatch', 4, 'Training', '', '', 'assets\\images\\Cards\\Upgrades\\Overwatch.png'),
         new Upgrade('Tenacity', 4, 'Training', '', '', 'assets\\images\\Cards\\Upgrades\\Tenacity.png'),
         // Pilot
+        new Upgrade('First Sergeant Arbmab', 5, 'Pilot', 'Ground Vehicle', 'Imperial',
+            'assets\\images\\Cards\\Upgrades\\First Sergeant Arbmab.png'),
         new Upgrade('General Weiss', 10, 'Pilot', 'Ground Vehicle', 'Imperial', 'assets\\images\\Cards\\Upgrades\\General Weiss.png'),
+        new Upgrade('Imperial Hammers Elite Armor Pilot', 10, 'Pilot', 'Ground Vehicle', 'Imperial',
+            'assets\\images\\Cards\\Upgrades\\Imperial Hammers Elite Armor Pilot.png'),
         new Upgrade('Wedge Antilles', 5, 'Pilot', 'Repulsor Vehicle', 'Rebel', 'assets\\images\\Cards\\Upgrades\\Wedge Antilles.png'),
         // Generator
         new Upgrade('Barrage Generator', 10, 'Generator', '', '', 'assets\\images\\Cards\\Upgrades\\Barrage Generator.png'),
@@ -64,10 +69,14 @@ export class UpgradeService {
         new Upgrade('AT-ST Mortar Launcher', 10, 'Hardpoint', 'AT-ST', '', 'assets\\images\\Cards\\Upgrades\\AT-ST Mortar Launcher.png'),
         new Upgrade('Ax-108 "Ground Buzzer"', 20, 'Hardpoint', 'T-47 Airspeeder', '',
             'assets\\images\\Cards\\Upgrades\\Ax-108 Ground Buzzer.png'),
+        new Upgrade('DLT-19 Rifle Pintle', 18, 'Hardpoint', 'TX-225 GAVw Occupier Combat Assault Tank', '',
+            'assets\\images\\Cards\\Upgrades\\DLT-19 Rifle Pintle.png'),
         new Upgrade('DW-3 Concussion Grenade Launcher', 15, 'Hardpoint', 'AT-ST', '',
             'assets\\images\\Cards\\Upgrades\\DW-3 Concussion Grenade Launcher.png'),
         new Upgrade('Mo/Dk Power Harpoon', 8, 'Hardpoint', 'T-47 Airspeeder', '',
             'assets\\images\\Cards\\Upgrades\\MoDk Power Harpoon.png'),
+        new Upgrade('RT-97C Rifle Pintle', 14, 'Hardpoint', 'TX-225 GAVw Occupier Combat Assault Tank', '',
+            'assets\\images\\Cards\\Upgrades\\RT-97C Rifle Pintle.png'),
         // Heavy Weapon
         new Upgrade('Bowcaster Wookiee', 35, 'Heavy Weapon', 'Wookiee Warriors', '',
         'assets\\images\\Cards\\Upgrades\\Bowcaster Wookiee.png'),
@@ -75,7 +84,11 @@ export class UpgradeService {
         new Upgrade('DH-447 Sniper', 28, 'Heavy Weapon', 'Rebel Commandos', '', 'assets\\images\\Cards\\Upgrades\\DH-447 Sniper.png'),
         new Upgrade('DLT-19 Stormtrooper', 24, 'Heavy Weapon', 'Stormtroopers', '',
             'assets\\images\\Cards\\Upgrades\\DLT-19 Stormtrooper.png'),
+        new Upgrade('DLT-19D Trooper', 34, 'Heavy Weapon', 'Imperial Death Troopers', '',
+            'assets\\images\\Cards\\Upgrades\\DLT-19D Trooper.png'),
         new Upgrade('DLT-19x Sniper', 28, 'Heavy Weapon', 'Scout Troopers', '', 'assets\\images\\Cards\\Upgrades\\DLT-19x Sniper.png'),
+        new Upgrade('DT-F16', 22, 'Heavy Weapon', 'Imperial Death Troopers', '',
+            'assets\\images\\Cards\\Upgrades\\DT-F16.png'),
         new Upgrade('Electrostaff Guard', 25, 'Heavy Weapon', 'Imperial Royal Guards', '',
             'assets\\images\\Cards\\Upgrades\\Electrostaff Guard.png'),
         new Upgrade('Flametrooper', 20, 'Heavy Weapon', 'Snowtroopers', '', 'assets\\images\\Cards\\Upgrades\\Flametrooper.png'),
@@ -97,7 +110,9 @@ export class UpgradeService {
         new Upgrade('Z-6 Trooper', 22, 'Heavy Weapon', 'Rebel Troopers', '', 'assets\\images\\Cards\\Upgrades\\Z-6 Trooper.png'),
         // Armament
         new Upgrade('A-180 Pistol/Rifle', 0, 'Armament', 'Jyn Erso', '', 'assets\\images\\Cards\\Upgrades\\A-180 Pistol-Rifle.gif'),
-        new Upgrade('A-300 Short/Long', 6, 'Armament', 'Rebel Pathfinders', '', 'assets\\images\\Cards\\Upgrades\\A-300.gif')
+        new Upgrade('A-300 Short/Long', 6, 'Armament', 'Rebel Pathfinders', '', 'assets\\images\\Cards\\Upgrades\\A-300.gif'),
+        new Upgrade('E-11D Focused Fire/Grenade Launcher', 8, 'Armament', 'Imperial Death Troopers', '',
+            'assets\\images\\Cards\\Upgrades\\E-11D.gif')
 
     ];
     upgradeSelected = new EventEmitter<any>();
