@@ -5,5 +5,6 @@ export class Upgrade {
         public type: string,
         public unitRestriction: string,
         public factionRestriction: string,
-        public cardImage) {}
+        public cardImage,
+        public ID: string) {} // ID added for Tabletop Admiral URL formatting
 }

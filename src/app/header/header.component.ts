@@ -72,4 +72,9 @@ export class HeaderComponent implements OnInit {
       this.commandService.resetList();
     }
   }
+
+  onGenerateURL() {
+    const url = this.listService.generateURL();
+    alert(url);
+  }
 }

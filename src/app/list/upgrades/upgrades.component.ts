@@ -68,6 +68,9 @@ export class UpgradesComponent implements OnInit {
       case 'Armament':
         this.availableUpgrades = this.upgradeService.getUpgrades('Armament', this.unit.name, this.unit.faction, this.unit.type);
         break;
+      case 'Crew':
+        this.availableUpgrades = this.upgradeService.getUpgrades('Crew', this.unit.name, this.unit.faction, this.unit.type);
+        break;
     }
   }
 

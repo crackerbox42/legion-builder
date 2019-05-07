@@ -2,6 +2,7 @@ import { Unit } from './unit.model';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Upgrade } from './upgrade.model';
 import { CommandCard } from './command.model';
+import { List } from './list.model';
 
 export class ListService {
     list: Unit[] = [];
@@ -20,16 +21,19 @@ export class ListService {
 
     addUnit(unit: Unit) {
         this.list.push(unit);
+        this.list = this.sortList(this.list);
         this.listUpdated.emit(this.list.slice());
     }
     removeUnit(index) {
         this.list.splice(index, 1);
+        this.list = this.sortList(this.list);
         this.listUpdated.emit(this.list.slice());
     }
 
     duplicateUnit(index) {
         const unit = JSON.parse(JSON.stringify(this.list[index]));
         this.list.push(unit);
+        this.list = this.sortList(this.list);
         this.listUpdated.emit(this.list.slice());
     }
 
@@ -224,5 +228,67 @@ export class ListService {
     resetList() {
         this.list = [];
         this.listUpdated.emit(this.list.slice());
+    }
+
+    sortList(unsortedUnits: Unit[]) {
+        const commanders = [];
+        const corps = [];
+        const operatives = [];
+        const specialForces = [];
+        const supports = [];
+        const heavies = [];
+        const sortedUnits = [];
+
+        unsortedUnits.forEach(unit => {
+            switch (unit.rank) {
+                case 'Commander':
+                    commanders.push(unit);
+                    break;
+                case 'Corps':
+                    corps.push(unit);
+                    break;
+                case 'Operative':
+                    operatives.push(unit);
+                    break;
+                case 'Special Forces':
+                    specialForces.push(unit);
+                    break;
+                case 'Support':
+                    supports.push(unit);
+                    break;
+                case 'Heavy':
+                    heavies.push(unit);
+                    break;
+            }
+        });
+
+        commanders.sort((a, b) => a.name.localeCompare(b.name));
+        corps.sort((a, b) => a.name.localeCompare(b.name));
+        operatives.sort((a, b) => a.name.localeCompare(b.name));
+        specialForces.sort((a, b) => a.name.localeCompare(b.name));
+        supports.sort((a, b) => a.name.localeCompare(b.name));
+        heavies.sort((a, b) => a.name.localeCompare(b.name));
+
+        return sortedUnits.concat(commanders, corps, operatives, specialForces, supports, heavies);
+    }
+
+    generateURL() {
+        let url = 'https://tabletopadmiral.com/legion/';
+
+        const faction = this.list[1].faction;
+        url = url.concat(faction.toLowerCase(), '/');
+
+        this.list.forEach(unit => {
+            url = url.concat('p', unit.ID);
+            unit.chosenUpgrades.forEach(upgrade => {
+                if (upgrade === '') {
+                    url = url.concat('uEM');
+                } else {
+                    url = url.concat('u', upgrade.ID);
+                }
+            });
+        });
+
+        return url;
     }
 }

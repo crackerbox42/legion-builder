@@ -9,6 +9,7 @@ export class Unit {
         public availableUpgrades,
         public chosenUpgrades,
         public image: string,
-        public released: boolean
+        public released: boolean,
+        public ID: string // added for Tabletop Admiral style URL formatting
     ) {}
 }
