@@ -230,7 +230,7 @@ export class UnitsComponent implements OnInit {
     new CommandCard('Blast Off!', 1, 'R2-D2', '', 'assets\\images\\Cards\\Command Cards\\Blast Off!.png', true),
     
     // Galactic Republic 1 Pip
-    new CommandCard('Synchronized Offensive', 1, '', 'Galactic Republic', 'assets\\images\\Cards\\Command Cards\\Synchronized Offensive.png', true)
+    new CommandCard('Synchronized Offensive', 1, '', 'Galactic Republic', 'assets\\images\\Cards\\Command Cards\\Synchronized Offensive.png', true),
     new CommandCard('Call Me Captain', 1, 'Clone Captain Rex', '', 'assets\\images\\Cards\\Command Cards\\Call Me Captain.png', true),
     new CommandCard('Hello There!', 1, 'Obi-Wan Kenobi', '', 'assets\\images\\Cards\\Command Cards\\Hello There!.png', true),
     new CommandCard('Our Fate is in Your Hands', 1, 'Padme Amidala', '', 'assets\\images\\Cards\\Command Cards\\Our Fate is in Your Hands.png', true),
