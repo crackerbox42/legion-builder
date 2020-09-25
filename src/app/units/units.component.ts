@@ -77,11 +77,17 @@ export class UnitsComponent implements OnInit {
     
     // Corps
     //Empire
+    new Unit('Shoretroopers', '', 52, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Training', 'Gear', 'Grenades'], ['', '', '', '', ''],
+      'assets\\images\\Cards\\Shoretroopers.png', true, '27'),
+
     new Unit('Snowtroopers', '', 48, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
       'assets\\images\\Cards\\Snowtroopers.png', true, '07'),
 
     new Unit('Stormtroopers', '', 44, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
       'assets\\images\\Cards\\Stormtroopers.png', true, '05'),
+
+    new Unit('DF-90 Mortar Trooper', '', 36, 'Corps', 'Emplacement Trooper', 'Imperial', ['Comms'], [''],
+      'assets\\images\\Cards\\DF-90 Mortar Trooper.png', true, '30'),
 
     //Rebel Alliance
     new Unit('Fleet Troopers', '', 44, 'Corps', 'Trooper', 'Rebel', ['Heavy Weapon', 'Personnel', 'Gear', 'Grenades'], ['', '', '', ''],
@@ -105,6 +111,12 @@ export class UnitsComponent implements OnInit {
     new Unit('Imperial Royal Guards', '', 75, 'Special Forces', 'Trooper', 'Imperial',
       ['Heavy Weapon', 'Training', 'Training', 'Gear', 'Grenades'], ['', '', '', '', ''],
       'assets\\images\\Cards\\Imperial Royal Guards.png', true, '15'),
+      
+    new Unit('Imperial Special Forces', '', 68, 'Special Forces', 'Trooper', 'Imperial', ['Heavy Weapon', 'Training', 'Training', 'Comms', 'Gear', 'Grenades'],
+      ['', '', '', '', '', ''], 'assets\\images\\Cards\\Imperial Special Forces.png', true, '4e'),
+
+    new Unit('Imperial Special Forces', 'Inferno Squad', 34, 'Special Forces', 'Trooper', 'Imperial', ['Heavy Weapon', 'Heavy Weapon', 'Training', 'Training', 'Comms', 'Gear', 'Grenades'],
+      ['', '', '', '', '', '', ''], 'assets\\images\\Cards\\Imperial Special Forces (Inferno Squad).png', true, '4f'),
     
     new Unit('Scout Troopers', '', 60, 'Special Forces', 'Trooper', 'Imperial', ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
       ['', '', '', '', ''], 'assets\\images\\Cards\\Scout Troopers.png', true, '11'),
@@ -112,18 +124,18 @@ export class UnitsComponent implements OnInit {
     new Unit('Scout Troopers', 'Strike Team', 16, 'Special Forces', 'Trooper', 'Imperial',
       ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'], ['', '', '', '', ''],
       'assets\\images\\Cards\\Scout Troopers - Strike Team.png', true, '1a'),
+
     //Rebel Alliance
-
-    new Unit('Mandalorian Resistance', 'Clan Wren', 75, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Heavy Weapon', 'Training', 'Comms', 'Gear', ,'Armament' 'Grenades'],
-      ['', '', '', '', '', '', ''], 'assets\\images\\Cards\\Mandalorian Resistance (Clan Wren).png', true, '48'),
-
-    new Unit('Mandalorian Resistance', '', 75, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Training', 'Comms', 'Gear', ,'Armament' 'Grenades'],
+    new Unit('Mandalorian Resistance', '', 72, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Training', 'Comms', 'Gear', ,'Armament', 'Grenades'],
       ['', '', '', '', '', ''], 'assets\\images\\Cards\\Mandalorian Resistance.png', true, '47'),
-
+    
+    new Unit('Mandalorian Resistance', 'Clan Wren', 34, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Heavy Weapon', 'Training', 'Comms', 'Gear', 'Armament', 'Grenades'],
+      ['', '', '', '', '', '', ''], 'assets\\images\\Cards\\Mandalorian Resistance (Clan Wren).png', true, '48'),
+    
     new Unit('Rebel Commandos', '', 60, 'Special Forces', 'Trooper', 'Rebel', ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'],
       ['', '', '', '', ''], 'assets\\images\\Cards\\Rebel Commandos.png', true, '0d'),
 
-    new Unit('Rebel Commandos', 'Strike Team', 16, 'Special Forces', 'Trooper', 'Rebel',
+    new Unit('Rebel Commandos', 'Strike Team', 20, 'Special Forces', 'Trooper', 'Rebel',
       ['Heavy Weapon', 'Training', 'Comms', 'Gear', 'Grenades'], ['', '', '', '', ''],
       'assets\\images\\Cards\\Rebel Commandos - Strike Team.png', true, '0e'),
 
@@ -135,28 +147,39 @@ export class UnitsComponent implements OnInit {
       ['', '', '', '', ''], 'assets\\images\\Cards\\Wookiee Warriors.png', true, '18'),
 
     // Supports
-    new Unit('1.4 FD Laser Cannon Team', '', 70, 'Support', 'Emplacement Trooper', 'Rebel', ['Comms', 'Generator'], ['', ''],
-      'assets\\images\\Cards\\14 FD Laser Cannon Team.png', true, '12'),
-
-    new Unit('74-Z Speeder Bikes', '', 90, 'Support', 'Repulsor Vehicle', 'Imperial', ['Comms'], [''],
-      'assets\\images\\Cards\\74-Z Speeder Bikes.png', true, '02'),
-
-    new Unit('AT-RT', '', 55, 'Support', 'Ground Vehicle', 'Rebel', ['Hardpoint', 'Comms'], ['', ''],
-      'assets\\images\\Cards\\AT-RT.png', true, '01'),
+    //Empire
+    new Unit('Dewback Rider', '', 90, 'Support', 'Creature Trooper', 'Imperial', ['Training', 'Comms', 'Armament'], ['', '', ''],
+      'assets\\images\\Cards\\Dewback Rider.png', true, '28'),
 
     new Unit('E-Web Heavy Blaster Team', '', 55, 'Support', 'Emplacement Trooper', 'Imperial', ['Comms', 'Generator'], ['', ''],
-      'assets\\images\\Cards\\E-Web Heavy Blaster Team.png', true, '13'),
+    'assets\\images\\Cards\\E-Web Heavy Blaster Team.png', true, '13'),
+    
+    new Unit('74-Z Speeder Bikes', '', 90, 'Support', 'Repulsor Vehicle', 'Imperial', ['Comms'], [''],
+    'assets\\images\\Cards\\74-Z Speeder Bikes.png', true, '02'),
+
+    //Rebel Alliance
+    new Unit('AT-RT', '', 55, 'Support', 'Ground Vehicle', 'Rebel', ['Hardpoint', 'Comms'], ['', ''],
+      'assets\\images\\Cards\\AT-RT.png', true, '01'),
+      
+    new Unit('1.4 FD Laser Cannon Team', '', 70, 'Support', 'Emplacement Trooper', 'Rebel', ['Comms', 'Generator'], ['', ''],
+        'assets\\images\\Cards\\14 FD Laser Cannon Team.png', true, '12'),
+
+    new Unit('Tauntaun Riders', '', 90, 'Support', 'Creature Trooper', 'Rebel', ['Training', 'Comms'], ['', ''],
+      'assets\\images\\Cards\\Tauntaun Riders.png', true, '23'),
+
 
     // Heavies
-    new Unit('AT-ST', '', 195, 'Heavy', 'Ground Vehicle', 'Imperial', ['Pilot', 'Hardpoint', 'Hardpoint', 'Hardpoint', 'Comms'],
+    //Empire
+    new Unit('AT-ST', '', 170, 'Heavy', 'Ground Vehicle', 'Imperial', ['Pilot', 'Hardpoint', 'Hardpoint', 'Hardpoint', 'Comms'],
       ['', '', '', '', ''], 'assets\\images\\Cards\\AT-ST.png', true, '09'),
 
-    new Unit('T-47 Airspeeder', '', 175, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''],
+    new Unit('TX-225 GAVw Occupier Combat Assault Tank', '', 155, 'Heavy', 'Ground Vehicle', 'Imperial',
+        ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''], 'assets\\images\\Cards\\TX-225 GAVw Occupier Combat Assault Tank.png', true, '1f'),
+
+    //Rebel Alliance
+    new Unit('T-47 Airspeeder', '', 140, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''],
       'assets\\images\\Cards\\T-47 Airspeeder.png', true, '0a'),
 
-    new Unit('TX-225 GAVw Occupier Combat Assault Tank', '', 155, 'Heavy', 'Ground Vehicle', 'Imperial',
-      ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''], 'assets\\images\\Cards\\TX-225 GAVw Occupier Combat Assault Tank.png', true, '1f'),
-      
     new Unit('X-34 Landspeeder', '', 75, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Crew', 'Crew', 'Hardpoint', 'Comms'],
       ['', '', '', '', ''], 'assets\\images\\Cards\\X-34 Landspeeder.png', true, '1f')
   ];
