@@ -49,6 +49,19 @@ export class UnitsComponent implements OnInit {
     new Unit('Rebel Officer', '', 50, 'Commander', 'Trooper', 'Rebel', ['Command', 'Gear'], ['', ''],
       'assets\\images\\Cards\\Rebel Officer.png', true, '16'),
 
+    //Galactic Republic
+    new Unit('Obi-Wan Kenobi', '', 175, 'Commander', 'Trooper', 'Galactic Republic', ['Force', 'Force', 'Command', 'Training'], ['', '', '', ''],
+      'assets\\images\\Cards\\Obi-Wan Kenobi.png', true, '29'),
+
+    new Unit('Anakin Skywalker', '', 160, 'Commander', 'Trooper', 'Galactic Republic', ['Force'], [''],
+      '', true, '49'),
+
+    new Unit('Clone Captain Rex', '', 90, 'Commander', 'Clone Trooper', 'Galactic Republic', ['Command', 'Training', 'Gear', 'Gear', 'Grenades'], ['', '', '', '', ''],
+      'assets\\images\\Cards\\Clone Captain Rex.png', true, '32'),
+
+    new Unit('Clone Commander', '', 55, 'Commander', 'Clone Trooper', 'Galactic Republic', ['Command'], [''],
+      '', true, '4b'),
+
     // Operatives
     //Empire
     new Unit('Boba Fett', '', 140, 'Operative', 'Trooper', 'Imperial', ['Training', 'Training', 'Gear', 'Gear'], ['', '', '', ''],
@@ -74,7 +87,14 @@ export class UnitsComponent implements OnInit {
     new Unit('Sabine Wren', '', 125, 'Operative', 'Trooper', 'Rebel', ['Training', 'Gear', 'Gear', 'Armament'], ['', '', '', ''],
         'assets\\images\\Cards\\Sabine Wren.png', true, '21'),
 
-    
+
+    //Galactic Republic
+    new Unit('Padme Amidala', '', 90, 'Operative', 'Trooper', 'Galactic Republic', ['Command', 'Training', 'Gear', 'Armament'], ['', '', '', ''],
+        'assets\\images\\Cards\\Padme Amidala.png', true, '3c'),
+
+    new Unit('R2-D2', '', 35, 'Operative', 'Droid Trooper', 'Galactic Republic', ['Training', 'Counterpart'], ['', ''],
+        'assets\\images\\Cards\\R2-D2 (Republic).png', true, '99'),
+
     // Corps
     //Empire
     new Unit('Shoretroopers', '', 52, 'Corps', 'Trooper', 'Imperial', ['Heavy Weapon', 'Personnel', 'Training', 'Gear', 'Grenades'], ['', '', '', '', ''],
@@ -178,75 +198,114 @@ export class UnitsComponent implements OnInit {
 
     //Rebel Alliance
     new Unit('T-47 Airspeeder', '', 140, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Hardpoint', 'Comms'], ['', '', ''],
-      'assets\\images\\Cards\\T-47 Airspeeder.png', true, '0a'),
-
+    'assets\\images\\Cards\\T-47 Airspeeder.png', true, '0a'),
+    
     new Unit('X-34 Landspeeder', '', 75, 'Heavy', 'Repulsor Vehicle', 'Rebel', ['Pilot', 'Crew', 'Crew', 'Hardpoint', 'Comms'],
-      ['', '', '', '', ''], 'assets\\images\\Cards\\X-34 Landspeeder.png', true, '1f')
+    ['', '', '', '', ''], 'assets\\images\\Cards\\X-34 Landspeeder.png', true, '1f')
   ];
-
+  
   commandCards = [
+  //Generic 1 Pip
     new CommandCard('Ambush', 1, '', '', 'assets\\images\\Cards\\Command Cards\\Ambush.png', true),
-    new CommandCard('Sabotaged Communications', 1, '', 'Rebel',
-      'assets\\images\\Cards\\Command Cards\\Sabotaged Communications.png', true),
+    
+    //Imperial 1 Pip
     new CommandCard('Covert Observation', 1, '', 'Imperial', 'assets\\images\\Cards\\Command Cards\\Covert Observation.png', true),
-    new CommandCard('Son of Skywalker', 1, 'Luke Skywalker', '', 'assets\\images\\Cards\\Command Cards\\Son of Skywalker.png', false),
-    new CommandCard('Coordinated Bombardment', 1, 'Leia Organa', '',
-      'assets\\images\\Cards\\Command Cards\\Coordinated Bombardment.png', false),
-    new CommandCard('Implacable', 1, 'Darth Vader', '', 'assets\\images\\Cards\\Command Cards\\Implacable.png', false),
-    new CommandCard('Maximum Firepower', 1, 'General Veers', '', 'assets\\images\\Cards\\Command Cards\\Maximum Firepower.png', false),
-    new CommandCard('Sorry About the Mess', 1, 'Han Solo', '', 'assets\\images\\Cards\\Command Cards\\Sorry About the Mess.png', false),
-    new CommandCard('Whipcord Launcher', 1, 'Boba Fett', '', 'assets\\images\\Cards\\Command Cards\\Whipcord Launcher.png', false),
+    new CommandCard('Implacable', 1, 'Darth Vader', '', 'assets\\images\\Cards\\Command Cards\\Implacable.png', true),
+    new CommandCard('Maximum Firepower', 1, 'General Veers', '', 'assets\\images\\Cards\\Command Cards\\Maximum Firepower.png', true),
     new CommandCard('And Now...You Will Die', 1, 'Emperor Palpatine', '',
-      'assets\\images\\Cards\\Command Cards\\And Now You Will Die.png', false),
-    new CommandCard('Common Cause', 1, 'Chewbacca', '', 'assets\\images\\Cards\\Command Cards\\Common Cause.png', false),
-    new CommandCard('Rebellious', 1, 'Jyn Erso', '', 'assets\\images\\Cards\\Command Cards\\Rebellious.png', false),
+    'assets\\images\\Cards\\Command Cards\\And Now You Will Die.png', true),
     new CommandCard('Voracious Ambition', 1, 'Director Orson Krennic', '',
-      'assets\\images\\Cards\\Command Cards\\Voracious Ambition.png', false),
+    'assets\\images\\Cards\\Command Cards\\Voracious Ambition.png', true),
+    new CommandCard('Whipcord Launcher', 1, 'Boba Fett', '', 'assets\\images\\Cards\\Command Cards\\Whipcord Launcher.png', true),
+    
+    //Rebel Alliance 1 Pip
+    new CommandCard('Sabotaged Communications', 1, '', 'Rebel',
+    'assets\\images\\Cards\\Command Cards\\Sabotaged Communications.png', true),
+    new CommandCard('Son of Skywalker', 1, 'Luke Skywalker', '', 'assets\\images\\Cards\\Command Cards\\Son of Skywalker.png', true),
+    new CommandCard('Coordinated Bombardment', 1, 'Leia Organa', '',
+    'assets\\images\\Cards\\Command Cards\\Coordinated Bombardment.png', true),
+    new CommandCard('Rebellious', 1, 'Jyn Erso', '', 'assets\\images\\Cards\\Command Cards\\Rebellious.png', true),
+    new CommandCard('Sorry About the Mess', 1, 'Han Solo', '', 'assets\\images\\Cards\\Command Cards\\Sorry About the Mess.png', true),
+    new CommandCard('Common Cause', 1, 'Chewbacca', '', 'assets\\images\\Cards\\Command Cards\\Common Cause.png', true),
+    new CommandCard('Blast Off!', 1, 'R2-D2', '', 'assets\\images\\Cards\\Command Cards\\Blast Off!.png', true),
+    
+    // Galactic Republic 1 Pip
+    new CommandCard('Synchronized Offensive', 1, '', 'Galactic Republic', 'assets\\images\\Cards\\Command Cards\\Synchronized Offensive.png', true)
+    new CommandCard('Call Me Captain', 1, 'Clone Captain Rex', '', 'assets\\images\\Cards\\Command Cards\\Call Me Captain.png', true),
+    new CommandCard('Hello There!', 1, 'Obi-Wan Kenobi', '', 'assets\\images\\Cards\\Command Cards\\Hello There!.png', true),
+    new CommandCard('Our Fate is in Your Hands', 1, 'Padme Amidala', '', 'assets\\images\\Cards\\Command Cards\\Our Fate is in Your Hands.png', true),
+    
+  //Generic 2 Pip
     new CommandCard('Push', 2, '', '', 'assets\\images\\Cards\\Command Cards\\Push.png', true),
-    new CommandCard('Turning the Tide', 2, '', 'Rebel', 'assets\\images\\Cards\\Command Cards\\Turning the Tide.png', true),
+
+    //Imperial 2 Pip
     new CommandCard('Pinned Down', 2, '', 'Imperial', 'assets\\images\\Cards\\Command Cards\\Pinned Down.png', true),
-    new CommandCard('My Ally Is the Force', 2, 'Luke Skywalker', '',
-      'assets\\images\\Cards\\Command Cards\\My Ally Is the Force.png', false),
-    new CommandCard('No Time for Sorrows', 2, 'Leia Organa', '', 'assets\\images\\Cards\\Command Cards\\No Time for Sorrows.png', false),
     new CommandCard('New Ways to Motivate Them', 2, 'Darth Vader', '',
-      'assets\\images\\Cards\\Command Cards\\New Ways to Motivate Them.png', false),
+    'assets\\images\\Cards\\Command Cards\\New Ways to Motivate Them.png', true),
     new CommandCard('Evasive Maneuvers', 2, 'General Veers', '',
-      'assets\\images\\Cards\\Command Cards\\Evasive Maneuvers.png', false),
-    new CommandCard('Reckless Diversion', 2, 'Han Solo', '', 'assets\\images\\Cards\\Command Cards\\Reckless Diversion.png', false),
-    new CommandCard('ZX Flame Projector', 2, 'Boba Fett', '', 'assets\\images\\Cards\\Command Cards\\ZX Flame Projector.png', false),
+    'assets\\images\\Cards\\Command Cards\\Evasive Maneuvers.png', true),
     new CommandCard('Give in to Your Anger', 2, 'Emperor Palpatine', '',
-      'assets\\images\\Cards\\Command Cards\\Give in to Your Anger.png', false),
-    new CommandCard('Brains and Brawn', 2, 'Chewbacca', '', 'assets\\images\\Cards\\Command Cards\\Brains and Brawn.png', false),
-    new CommandCard('Trust Goes Both Ways', 2, 'Jyn Erso', '', 'assets\\images\\Cards\\Command Cards\\Trust Goes Both Ways.png', false),
+    'assets\\images\\Cards\\Command Cards\\Give in to Your Anger.png', true),
     new CommandCard('Deploy the Garrison', 2, 'Director Orson Krennic', '',
-      'assets\\images\\Cards\\Command Cards\\Deploy the Garrison.png', false),
-    new CommandCard('Assault', 3, '', '', 'assets\\images\\Cards\\Command Cards\\Assault.png', true),
-    new CommandCard('Covering Fire', 3, '', 'Rebel', 'assets\\images\\Cards\\Command Cards\\Covering Fire.png', true),
-    new CommandCard('Coordinated Fire', 3, '', 'Imperial', 'assets\\images\\Cards\\Command Cards\\Coordinated Fire.png', true),
-    new CommandCard('Complete the Mission', 3, 'Jyn Erso', '', 'assets\\images\\Cards\\Command Cards\\Complete the Mission.png', false),
-    new CommandCard('Return of the Jedi', 3, 'Luke Skywalker', '', 'assets\\images\\Cards\\Command Cards\\Return of the Jedi.png', false),
+    'assets\\images\\Cards\\Command Cards\\Deploy the Garrison.png', true),
+    new CommandCard('ZX Flame Projector', 2, 'Boba Fett', '', 'assets\\images\\Cards\\Command Cards\\ZX Flame Projector.png', true),
+    
+    //Rebel Alliance 2 Pip
+    new CommandCard('Turning the Tide', 2, '', 'Rebel', 'assets\\images\\Cards\\Command Cards\\Turning the Tide.png', true),
+    new CommandCard('My Ally Is the Force', 2, 'Luke Skywalker', '',
+    'assets\\images\\Cards\\Command Cards\\My Ally Is the Force.png', true),
+    new CommandCard('No Time for Sorrows', 2, 'Leia Organa', '', 'assets\\images\\Cards\\Command Cards\\No Time for Sorrows.png', true),
     new CommandCard('Somebody Has to Save Our Skins', 3, 'Leia Organa', '',
-      'assets\\images\\Cards\\Command Cards\\Somebody Has to Save Our Skins.png', false),
-    new CommandCard('Master of Evil', 3, 'Darth Vader', '', 'assets\\images\\Cards\\Command Cards\\Master of Evil.png', false),
-    new CommandCard('Imperial Discipline', 3, 'General Veers', '', 'assets\\images\\Cards\\Command Cards\\Imperial Discipline.png', false),
-    new CommandCard('Change of Plans', 3, 'Han Solo', '', 'assets\\images\\Cards\\Command Cards\\Change of Plans.png', false),
-    new CommandCard('Z-6 Jetpack Rocket', 3, 'Boba Fett', '', 'assets\\images\\Cards\\Command Cards\\Z-6 Jetpack Rocket.png', false),
-    new CommandCard('Notorious Scoundrels', 3, 'Chewbacca', '', 'assets\\images\\Cards\\Command Cards\\Notorious Scoundrels.png', false),
-    new CommandCard('An Entire Legion', 3, 'Emperor Palpatine', '', 'assets\\images\\Cards\\Command Cards\\An Entire Legion.png', false),
+    new CommandCard('Trust Goes Both Ways', 2, 'Jyn Erso', '', 'assets\\images\\Cards\\Command Cards\\Trust Goes Both Ways.png', true),
+    'assets\\images\\Cards\\Command Cards\\Somebody Has to Save Our Skins.png', true),
+    new CommandCard('Reckless Diversion', 2, 'Han Solo', '', 'assets\\images\\Cards\\Command Cards\\Reckless Diversion.png', true),
+    new CommandCard('Brains and Brawn', 2, 'Chewbacca', '', 'assets\\images\\Cards\\Command Cards\\Brains and Brawn.png', true),
+    new CommandCard('Impromptu Immolation', 2, 'R2-D2', '', 'assets\\images\\Cards\\Command Cards\\Impromptu Immolation.png', true),
+    
+    // Galactic Republic 2 Pip
+    new CommandCard('Take That, Clankers!', 2, 'Clone Captain Rex', '', 'assets\\images\\Cards\\Command Cards\\Take That, Clankers!.png', true),
+    new CommandCard('Aggessive Negotiations', 2, 'Padme Amidala', '', 'assets\\images\\Cards\\Command Cards\\Aggessive Negotiations.png', true),
+    new CommandCard('Knowledge and Defense', 2, 'Obi-Wan Kenobi', '', 'assets\\images\\Cards\\Command Cards\\Knowledge and Defense.png', true),
+    
+  //Generic 3 Pip
+    new CommandCard('Assault', 3, '', '', 'assets\\images\\Cards\\Command Cards\\Assault.png', true),
+
+    //Imperial 3 Pip
+    new CommandCard('Coordinated Fire', 3, '', 'Imperial', 'assets\\images\\Cards\\Command Cards\\Coordinated Fire.png', true),
+    new CommandCard('Master of Evil', 3, 'Darth Vader', '', 'assets\\images\\Cards\\Command Cards\\Master of Evil.png', true),
+    new CommandCard('Imperial Discipline', 3, 'General Veers', '', 'assets\\images\\Cards\\Command Cards\\Imperial Discipline.png', true),
+    new CommandCard('An Entire Legion', 3, 'Emperor Palpatine', '', 'assets\\images\\Cards\\Command Cards\\An Entire Legion.png', true),
     new CommandCard('Annihilation Looms', 3, 'Director Orson Krennic', '',
-      'assets\\images\\Cards\\Command Cards\\Annihilation Looms.png', false),
+    'assets\\images\\Cards\\Command Cards\\Annihilation Looms.png', true),
+    new CommandCard('Z-6 Jetpack Rocket', 3, 'Boba Fett', '', 'assets\\images\\Cards\\Command Cards\\Z-6 Jetpack Rocket.png', true),
+    
+    //Rebel Alliance 3 Pip
+    new CommandCard('Covering Fire', 3, '', 'Rebel', 'assets\\images\\Cards\\Command Cards\\Covering Fire.png', true),    
+    new CommandCard('Return of the Jedi', 3, 'Luke Skywalker', '', 'assets\\images\\Cards\\Command Cards\\Return of the Jedi.png', true),    
+    new CommandCard('Complete the Mission', 3, 'Jyn Erso', '', 'assets\\images\\Cards\\Command Cards\\Complete the Mission.png', true),
+    new CommandCard('Change of Plans', 3, 'Han Solo', '', 'assets\\images\\Cards\\Command Cards\\Change of Plans.png', true),
+    new CommandCard('Notorious Scoundrels', 3, 'Chewbacca', '', 'assets\\images\\Cards\\Command Cards\\Notorious Scoundrels.png', true),
+    new CommandCard('Smoke Screen', 3, 'R2-D2', '', 'assets\\images\\Cards\\Command Cards\\Smoke Screen.png', true),
+    
+    // Galactic Republic 3 Pip
+    new CommandCard('Were Not Programmed', 3, 'Clone Captain Rex', '', 'assets\\images\\Cards\\Command Cards\\Were Not Programmed.png', true),    
+    new CommandCard('Diplomatic Cover', 3, 'Padme Amidala', '', 'assets\\images\\Cards\\Command Cards\\Diplomatic Cover.png', true),   
+    new CommandCard('General Kenobi', 3, 'Obi-Wan Kenobi', '', 'assets\\images\\Cards\\Command Cards\\General Kenobi.png', true),
+
+  //Generic 4 Pip
     new CommandCard('Standing Orders', 4, '', '', 'assets\\images\\Cards\\Command Cards\\Standing Orders.png', true)
   ];
 
+  
   currentFaction = 'Imperial';
   showUnreleased = false;
   selectedCommanders: string[];
-
+  
   constructor(private listService: ListService) { }
-
+  
   ngOnInit() {
     this.selectedCommanders = this.listService.getCommanders();
-
+    
     this.listService.listUpdated.subscribe(
       (newList: Unit[]) => {
         this.updateCommandCards();
